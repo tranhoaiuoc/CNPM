@@ -61,8 +61,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.btntim = new System.Windows.Forms.Button();
-            this.txttrangthaihang = new System.Windows.Forms.TextBox();
+            this.btnadd = new System.Windows.Forms.Button();
+            this.txtngaysx = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txthsd = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -77,6 +77,8 @@
             this.tenthuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Loaithuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HSD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtgia = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -198,7 +200,7 @@
             this.đăngNhậpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(776, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(762, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -425,8 +427,10 @@
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.SystemColors.Menu;
-            this.groupBox5.Controls.Add(this.btntim);
-            this.groupBox5.Controls.Add(this.txttrangthaihang);
+            this.groupBox5.Controls.Add(this.btnadd);
+            this.groupBox5.Controls.Add(this.txtgia);
+            this.groupBox5.Controls.Add(this.label12);
+            this.groupBox5.Controls.Add(this.txtngaysx);
             this.groupBox5.Controls.Add(this.label11);
             this.groupBox5.Controls.Add(this.txthsd);
             this.groupBox5.Controls.Add(this.label10);
@@ -446,43 +450,44 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Thông tin thuốc";
             // 
-            // btntim
+            // btnadd
             // 
-            this.btntim.Location = new System.Drawing.Point(347, 286);
-            this.btntim.Name = "btntim";
-            this.btntim.Size = new System.Drawing.Size(75, 23);
-            this.btntim.TabIndex = 9;
-            this.btntim.Text = "Tìm Kiếm";
-            this.btntim.UseVisualStyleBackColor = true;
-            this.btntim.Click += new System.EventHandler(this.btntim_Click);
+            this.btnadd.Location = new System.Drawing.Point(408, 345);
+            this.btnadd.Name = "btnadd";
+            this.btnadd.Size = new System.Drawing.Size(94, 23);
+            this.btnadd.TabIndex = 9;
+            this.btnadd.Text = "Add";
+            this.btnadd.UseVisualStyleBackColor = true;
+            this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
             // 
-            // txttrangthaihang
+            // txtngaysx
             // 
-            this.txttrangthaihang.Location = new System.Drawing.Point(347, 238);
-            this.txttrangthaihang.Name = "txttrangthaihang";
-            this.txttrangthaihang.Size = new System.Drawing.Size(207, 20);
-            this.txttrangthaihang.TabIndex = 8;
+            this.txtngaysx.Location = new System.Drawing.Point(408, 238);
+            this.txtngaysx.Name = "txtngaysx";
+            this.txtngaysx.Size = new System.Drawing.Size(145, 20);
+            this.txtngaysx.TabIndex = 8;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(344, 219);
+            this.label11.Location = new System.Drawing.Point(405, 219);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(97, 13);
+            this.label11.Size = new System.Drawing.Size(56, 13);
             this.label11.TabIndex = 7;
-            this.label11.Text = "Trạng thái hàng";
+            this.label11.Text = "Ngày SX";
             // 
             // txthsd
             // 
-            this.txthsd.Location = new System.Drawing.Point(347, 189);
+            this.txthsd.Location = new System.Drawing.Point(408, 189);
             this.txthsd.Name = "txthsd";
-            this.txthsd.Size = new System.Drawing.Size(207, 20);
+            this.txthsd.Size = new System.Drawing.Size(145, 20);
             this.txthsd.TabIndex = 8;
+            this.txthsd.TextChanged += new System.EventHandler(this.txthsd_TextChanged);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(344, 170);
+            this.label10.Location = new System.Drawing.Point(405, 170);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(33, 13);
             this.label10.TabIndex = 7;
@@ -490,15 +495,15 @@
             // 
             // txtdang
             // 
-            this.txtdang.Location = new System.Drawing.Point(347, 139);
+            this.txtdang.Location = new System.Drawing.Point(408, 139);
             this.txtdang.Name = "txtdang";
-            this.txtdang.Size = new System.Drawing.Size(207, 20);
+            this.txtdang.Size = new System.Drawing.Size(145, 20);
             this.txtdang.TabIndex = 8;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(344, 120);
+            this.label9.Location = new System.Drawing.Point(405, 120);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(37, 13);
             this.label9.TabIndex = 7;
@@ -506,15 +511,15 @@
             // 
             // txtloaithuoc
             // 
-            this.txtloaithuoc.Location = new System.Drawing.Point(347, 84);
+            this.txtloaithuoc.Location = new System.Drawing.Point(408, 84);
             this.txtloaithuoc.Name = "txtloaithuoc";
-            this.txtloaithuoc.Size = new System.Drawing.Size(207, 20);
+            this.txtloaithuoc.Size = new System.Drawing.Size(145, 20);
             this.txtloaithuoc.TabIndex = 8;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(344, 65);
+            this.label8.Location = new System.Drawing.Point(405, 65);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(67, 13);
             this.label8.TabIndex = 7;
@@ -522,15 +527,15 @@
             // 
             // txttenthuoc
             // 
-            this.txttenthuoc.Location = new System.Drawing.Point(347, 38);
+            this.txttenthuoc.Location = new System.Drawing.Point(408, 38);
             this.txttenthuoc.Name = "txttenthuoc";
-            this.txttenthuoc.Size = new System.Drawing.Size(207, 20);
+            this.txttenthuoc.Size = new System.Drawing.Size(145, 20);
             this.txttenthuoc.TabIndex = 8;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(344, 19);
+            this.label7.Location = new System.Drawing.Point(405, 19);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(65, 13);
             this.label7.TabIndex = 7;
@@ -554,7 +559,7 @@
             // IDThuoc
             // 
             this.IDThuoc.DataPropertyName = "IDThuoc";
-            this.IDThuoc.HeaderText = "STT";
+            this.IDThuoc.HeaderText = "ID";
             this.IDThuoc.Name = "IDThuoc";
             this.IDThuoc.Width = 40;
             // 
@@ -563,7 +568,6 @@
             this.tenthuoc.DataPropertyName = "Tenthuoc";
             this.tenthuoc.HeaderText = "Tên Thuốc";
             this.tenthuoc.Name = "tenthuoc";
-            this.tenthuoc.Width = 90;
             // 
             // Loaithuoc
             // 
@@ -577,14 +581,29 @@
             this.HSD.DataPropertyName = "HSD";
             this.HSD.HeaderText = "HSD";
             this.HSD.Name = "HSD";
-            this.HSD.Width = 40;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(405, 276);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(26, 13);
+            this.label12.TabIndex = 7;
+            this.label12.Text = "Giá";
+            // 
+            // txtgia
+            // 
+            this.txtgia.Location = new System.Drawing.Point(408, 295);
+            this.txtgia.Name = "txtgia";
+            this.txtgia.Size = new System.Drawing.Size(145, 20);
+            this.txtgia.TabIndex = 8;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(776, 437);
+            this.ClientSize = new System.Drawing.Size(762, 437);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
@@ -639,8 +658,8 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.DataGridView grvthuoc;
-        private System.Windows.Forms.Button btntim;
-        private System.Windows.Forms.TextBox txttrangthaihang;
+        private System.Windows.Forms.Button btnadd;
+        private System.Windows.Forms.TextBox txtngaysx;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txthsd;
         private System.Windows.Forms.Label label10;
@@ -659,6 +678,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn tenthuoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn Loaithuoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn HSD;
+        private System.Windows.Forms.TextBox txtgia;
+        private System.Windows.Forms.Label label12;
     }
 }
 
