@@ -16,7 +16,7 @@ namespace khothuoc
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new NhapThuoc());
+            Application.Run(new Form1());
         }
     }
 }
