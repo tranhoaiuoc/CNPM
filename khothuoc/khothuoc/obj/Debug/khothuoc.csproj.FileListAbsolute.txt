@@ -10,6 +10,7 @@ C:\Users\Admin\Documents\Visual Studio 2013\Projects\uoc57k3\khothuoc\khothuoc\o
 E:\Môn học 2020\công nghệ phần mềm\khothuoc\khothuoc\bin\Debug\khothuoc.exe.config
 E:\Môn học 2020\công nghệ phần mềm\khothuoc\khothuoc\obj\Debug\khothuoc.exe
 E:\Môn học 2020\công nghệ phần mềm\khothuoc\khothuoc\obj\Debug\khothuoc.pdb
+<<<<<<< HEAD
 C:\Users\Admin\Documents\GitHub\CNPM\khothuoc\khothuoc\bin\Debug\khothuoc.exe.config
 C:\Users\Admin\Documents\GitHub\CNPM\khothuoc\khothuoc\obj\Debug\khothuoc.exe
 C:\Users\Admin\Documents\GitHub\CNPM\khothuoc\khothuoc\obj\Debug\khothuoc.pdb
@@ -20,3 +21,14 @@ C:\Users\Admin\Documents\GitHub\CNPM\khothuoc\khothuoc\obj\Debug\khothuoc.Form1.
 C:\Users\Admin\Documents\GitHub\CNPM\khothuoc\khothuoc\obj\Debug\khothuoc.NhapThuoc.resources
 C:\Users\Admin\Documents\GitHub\CNPM\khothuoc\khothuoc\obj\Debug\khothuoc.Properties.Resources.resources
 C:\Users\Admin\Documents\GitHub\CNPM\khothuoc\khothuoc\obj\Debug\khothuoc.csproj.GenerateResource.Cache
+=======
+E:\Môn học 2020\công nghệ phần mềm\GitHub\CNPM\khothuoc\khothuoc\bin\Debug\khothuoc.exe.config
+E:\Môn học 2020\công nghệ phần mềm\GitHub\CNPM\khothuoc\khothuoc\obj\Debug\khothuoc.exe
+E:\Môn học 2020\công nghệ phần mềm\GitHub\CNPM\khothuoc\khothuoc\obj\Debug\khothuoc.pdb
+E:\Môn học 2020\công nghệ phần mềm\GitHub\CNPM\khothuoc\khothuoc\obj\Debug\khothuoc.csprojResolveAssemblyReference.cache
+E:\Môn học 2020\công nghệ phần mềm\GitHub\CNPM\khothuoc\khothuoc\obj\Debug\khothuoc.Form1.resources
+E:\Môn học 2020\công nghệ phần mềm\GitHub\CNPM\khothuoc\khothuoc\obj\Debug\khothuoc.Properties.Resources.resources
+E:\Môn học 2020\công nghệ phần mềm\GitHub\CNPM\khothuoc\khothuoc\obj\Debug\khothuoc.csproj.GenerateResource.Cache
+E:\Môn học 2020\công nghệ phần mềm\GitHub\CNPM\khothuoc\khothuoc\bin\Debug\khothuoc.exe
+E:\Môn học 2020\công nghệ phần mềm\GitHub\CNPM\khothuoc\khothuoc\bin\Debug\khothuoc.pdb
+>>>>>>> f9979e8250403bc3f5f3f6b1b85d9edb1db0927a
