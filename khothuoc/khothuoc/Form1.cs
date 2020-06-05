@@ -22,19 +22,21 @@ namespace khothuoc
 
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void grvthuoc_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            int i = grvthuoc.CurrentRow.Index;
+            txttenthuoc.Text = grvthuoc.Rows[i].Cells[0].Value.ToString();
+            txtloaithuoc.Text = grvthuoc.Rows[i].Cells[1].Value.ToString();
+            txthsd.Text = grvthuoc.Rows[i].Cells[1].Value.ToString();
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btntim_Click(object sender, EventArgs e)
         {
-
+            string sql = "select .... like N'%" + txttenthuoc.Text + "%'";
+            grvthuoc.DataSource = db.getData(sql);
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-    }
+       
+    
 }
